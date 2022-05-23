@@ -1,8 +1,4 @@
-"""
-
-Blink LED program for Adafruit Grand Central
-
-"""
+# Blink LED program for Adafruit Grand Central
 
 import board
 import digitalio
@@ -10,7 +6,7 @@ import time
 
 # Set up the digital IO
 
-led = digitalio.DigitalInOut(board.D13)
+led = digitalio.DigitalInOut(board.LED)
 led.direction = digitalio.Direction.OUTPUT
 
 # Loop while blinking

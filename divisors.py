@@ -1,19 +1,14 @@
 # Print the divisors of a number
 
-# get the number
+# Get the number
 
-while True:
-    try:
-        number = int(input("Please enter a number: "))
-        break
-    except ValueError:
-        print("That was not a valid number. Try again...")
+number = int(input("Please enter a number: "))
 
-# for everything less than the number, see if it divides evenly
+# For everything less than the number, see if it divides evenly
 
-for test_number in range(1, number // 2 + 1):
+for test_number in range(1, number):
     if (number % test_number == 0):
 
-# if so, print the number
+# If so, print the number
 
         print(test_number, " is a divisor")
