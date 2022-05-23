@@ -10,3 +10,6 @@ def fib(n):
         a = b
         b = old_a + b
     return list
+
+print(fib(1))
+print(fib(10))
