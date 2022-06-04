@@ -6,9 +6,8 @@ number = int(input("Please enter a number: "))
 
 # For everything less than the number, see if it divides evenly
 
-for test_number in range(1, number):
+divisors = list()
+for test_number in range(1, number + 1):
     if (number % test_number == 0):
-
-# If so, print the number
-
-        print(test_number, " is a divisor")
+        divisors.append(test_number)
+print(divisors)
