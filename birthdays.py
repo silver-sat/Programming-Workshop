@@ -1,28 +1,23 @@
-"""Display birthdays from dictionary
+# Display birthdays from dictionary
+#
 
-From Exercise 33 in practicepython.org
-
-"""
-
-import datetime
+from datetime import date
 
 # Store birthdays
 
 birthdays = {
-    "Albert Einstein": datetime.date(1879, 3, 14),
-    "Benjamin Franklin": datetime.date(1706, 1, 17),
-    "Ada Lovelace": datetime.date(1815, 12, 10)
+    "Albert Einstein": date(1879, 3, 14),
+    "Benjamin Franklin": date(1706, 1, 17),
+    "Ada Lovelace": date(1815, 12, 10)
     
     }
-
-
 
 # Print the birthdays we know
 
 print("I know the following birthdays:")
 
 for name in birthdays.keys():
-    print(name)
+    print(name) 
 
 # Ask for the name to look up
 
@@ -38,4 +33,4 @@ while True:
 
 # Print the name and the birthday
 
-print("That birthday is", birthdate.strftime("%A %B %d, %Y"))
+print(f'That birthday is {birthdate:%A %B %d, %Y}')
