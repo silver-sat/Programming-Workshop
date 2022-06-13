@@ -39,14 +39,11 @@ def check_winner(board):
     track_status(test_line([board[0][0], board[1][1], board[2][2]]))
     track_status(test_line([board[0][2], board[1][1], board[2][0]]))
     
-    # print result
-    if winner:
-        print(f"The winner is: {winner}")
-    else:
-        print("There is no winner")
+    # return result
+    return winner
     
 if __name__ == "__main__":
-    game_board = [[1, 2, 0],
-              [2, 1, 0],
-              [2, 1, 1]]
+    game_board = [[2, 2, 0],
+                  [2, 1, 0],
+                  [1, 1, 1]]
     check_winner(game_board)
