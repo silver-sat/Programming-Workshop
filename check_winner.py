@@ -6,9 +6,9 @@ winner = 0 # caution! global variable
 # Return number of the winner or 0 if no winner
     
 def test_line(line):
-    if all([item == 1 for item in line]):
+    if all(item == 1 for item in line):
         return 1
-    if all([item == 2 for item in line]):
+    if all(item == 2 for item in line):
         return 2
     return 0
 
